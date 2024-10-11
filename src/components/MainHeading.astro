@@ -1,0 +1,19 @@
+---
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
+---
+
+<h3>{label}</h3>
+
+<style>
+  h3 {
+    font-size: 24px;
+    text-align: left;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+</style>

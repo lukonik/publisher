@@ -1,0 +1,14 @@
+---
+import hljs from "highlight.js";
+import "highlight.js/styles/github.css"; // You can import any style you like
+import { Code } from "astro:components";
+interface Props {
+  code: string;
+  language?: string;
+}
+
+const { code } = Astro.props;
+const language: any = Astro.props.language || "javascript";
+---
+
+<Code lang={language} code={code} />
