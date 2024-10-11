@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import myImage from "../assets/my_image.png";
+interface Props {
+  alt: string;
+  image: ImageMetadata;
+}
+
+const { alt, image } = Astro.props;
+---
+
+<!-- `alt` is mandatory on the Image component -->
+<Image src={image} alt={alt} />

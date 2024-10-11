@@ -12,6 +12,7 @@ import CodeBlock from "../components/CodeBlock.astro";
 import Math from "../components/Math.astro";
 import Link from "../components/Link.astro";
 import LineBreak from "../components/LineBreak.astro";
+import CodeOutput from '../components/CodeOutput.astro';
 ---
 
 <Layout title="Mass–energy equivalence">
@@ -27,12 +28,15 @@ import LineBreak from "../components/LineBreak.astro";
       constant and the units of measurement.[1][2] The principle is described by
       the physicist Albert Einstein's formula: Ipsum.
       <LineBreak />
-      The film was released on July 16, 2004. <Math>y = x + x^2 + 6</Math> While it was panned
-      by critics, the film was a box office success, grossing $70.1 million against
-      its $19 million budget, and inspired multiple straight-to-video films. Over
-      the years, it has developed into a cult classic.[2]
+      The film was released on July 16, 2004. <Math>y = x + x^2 + 6</Math> While
+      it was panned by critics, the film was a box office success, grossing $70.1
+      million against its $19 million budget, and inspired multiple straight-to-video
+      films. Over the years, it has developed into a cult classic.[2]
     </Body>
     <CodeBlock code="var a = 20;" />
+    <CodeOutput>
+      20
+    </CodeOutput>
     <Math is:raw> x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} </Math>
   </Article>
 </Layout>
