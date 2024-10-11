@@ -1,0 +1,41 @@
+<header>
+  <div class="logo">
+    <div class="main-logo">ML</div>
+    <div class="sub-logo">World</div>
+  </div>
+  <slot />
+</header>
+
+<style>
+  header {
+    background-color: white;
+    color: black;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #94a3b8;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    user-select: none;
+    cursor: pointer;
+  }
+  .sub-logo{
+  }
+  .main-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #ea580c;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+</style>
