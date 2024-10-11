@@ -1,0 +1,38 @@
+---
+import Title from "../components/Title.astro";
+import Layout from "../layouts/Layout.astro";
+import SubTitle from "../components/SubTitle.astro";
+import Article from "../components/Article.astro";
+import MainHeading from "../components/MainHeading.astro";
+import SubHeading from "../components/SubHeading.astro";
+import SubSubHeading from "../components/SubSubHeading.astro";
+import Body from "../components/Body.astro";
+import Code from "../components/Code.astro";
+import CodeBlock from "../components/CodeBlock.astro";
+import Math from "../components/Math.astro";
+import Link from "../components/Link.astro";
+import LineBreak from "../components/LineBreak.astro";
+---
+
+<Layout title="Mass–energy equivalence">
+  <Article>
+    <Title label="Mass–energy equivalence" />
+    <MainHeading label="Plot" />
+    <Body>
+      In <Link
+        href="https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence"
+        label="physics"
+      /> , mass–energy equivalence is the relationship between mass and energy in
+      a system's rest frame, where the two quantities differ only by a multiplicative
+      constant and the units of measurement.[1][2] The principle is described by
+      the physicist Albert Einstein's formula: Ipsum.
+      <LineBreak />
+      The film was released on July 16, 2004. <Math>y = x + x^2 + 6</Math> While it was panned
+      by critics, the film was a box office success, grossing $70.1 million against
+      its $19 million budget, and inspired multiple straight-to-video films. Over
+      the years, it has developed into a cult classic.[2]
+    </Body>
+    <CodeBlock code="var a = 20;" />
+    <Math is:raw> x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} </Math>
+  </Article>
+</Layout>
